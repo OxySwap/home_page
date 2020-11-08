@@ -1,0 +1,93 @@
+@blue-color: #226aff;
+@light-blue-color: #e5f6ff;
+@dark-blue-color: #67B3F5;
+
+@gray-color: #ebecf0;
+@gray1-color: #646464;
+@gray2-color: #929292;
+@gray3-color: #d4d4d4;
+@gray4-color: #afafaf;
+@gray5-color: #737373;
+@gray6-color: #d7d7d7;
+@gray7-color: #f3f3f3;
+@gray8-color: #7c7c7c;
+@gray9-color: #919191;
+
+@gold-color: #f8d190;
+@brown-color: #353535;
+@brown1-color: #2c2c2c;
+@brown2-color: #4b4131;
+@red-color: #ff5a5a;
+@color-white: #fff;
+@color-orange: #FFB04A;
+@font-defult-color: #333;
+@font-second-color: #666;
+@green-color: #EB4481;
+@green1-color: #389656;
+@light-green-color: #e2f6e9;
+@dark-green-color: #EB4481;
+@light-yellow-color: #FFECCE;
+@light-red-color: #E57771;
+
+@changeBtn-color: linear-gradient(90deg, rgba(51, 219, 245, 1) 0%, rgba(0, 206, 238, 1) 100%);
+.bd-top {
+	position: relative;
+
+	&::before {
+		content: '';
+		height: 1px;
+		background: @gray-color;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		transform: scaleY(0.5);
+
+		transform-origin: 50% 100%;
+	}
+}
+.bd-right {
+	position: relative;
+	&::before {
+		content: '';
+		width: 1px;
+		background: @gray-color;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		transform: scaleX(0.5);
+
+		transform-origin: 100% 50%;
+	}
+}
+.bd-bottom {
+	position: relative;
+	&::after {
+		content: '';
+		height: 1px;
+		background: @gray-color;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		transform: scaleY(0.5);
+
+		transform-origin: 50% 100%;
+	}
+}
+.bd-left {
+	position: relative;
+	&::before {
+		content: '';
+		width: 1px;
+		background: @gray-color;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		transform: scaleX(0.5);
+
+		transform-origin: 100% 50%;
+	}
+}
